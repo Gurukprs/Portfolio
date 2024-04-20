@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guruprasaath S</title>
+    <link rel="icon" href="img/favicon_io/favicon.ico" type="image/x-icon"/>
+    <link rel="manifest" href="/img/favicon_io/site.webmanifest">
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/socical-card.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="animation-wrapper">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="content">
+          <header class="hero-section">
+            <div data-speed=".6" class="tags-cloud">
+              <li class="tag"><span class="wrap">HTML</span></li>
+              <li class="tag"><span class="wrap">CSS</span></li>
+              <li class="tag"><span class="wrap">VSCode</span></li>
+              <li class="tag"><span class="wrap">Bootstrap</span></li>
+              <li class="tag"><span class="wrap">Javascript</span></li>
+              <li class="tag"><span class="wrap">Git</span></li>
+              <li class="tag"><span class="wrap">React</span></li>
+              <li class="tag"><span class="wrap">Node.js</span></li>
+              <li class="tag"><span class="wrap">Kali Linux</span></li>
+            </div>
+            <nav class="nav">
+              <div class="wrapper-nav">
+                <div class="nav-row">
+                  <a href="./index.html" class="logo"
+                    ><strong>Hello, </strong></a
+                  >
+                  <ul class="nav-list">
+                    <!-- <li class="nav-list__item">
+                      <a
+                        href="#projects"
+                        class="nav-list__link nav-list__link--active"
+                        >Projects</a
+                      >
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="container">
+              <div data-speed=".75" class="main-header">
+                <h1 class="main-title">
+                  This is <span>Guruprasaath</span><br />
+                  <p class="frontend">Full Stack developer</p>
+                </h1>
+              </div>
+            </div>
+          </header>
+          <div class="portfolio">
+            <div id="social">
+              <div class="container">
+                <main class="gallery">
+                  <div data-speed=".9" class="gallery__left">
+                    <a class="game gallery__item" href="https://www.linkedin.com/in/guruprasaath-s?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BxhR5n9fpSYmxZw4s1TA12w%3D%3D" >
+                    <div class="front">
+                      <img src="img/Linkedin.png" alt="game">
+                      <h3 class="name">Guruprasaath S</h3>
+                      <div class="status">
+                        <p class="username">Guruprasaath</p>
+                       
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="streaming-info">
+                        <p class="game-stat">1 <span>Followers</span></p>
+                        <p class="game-stat">0<span>Posts</span></p>
+                      </div>
+                      <button class="btn">See profile</button>
+                   
+                      </div>
+                      <div class="backgroundWrapper"></div>
+                      </a>					
+                  </div>
+                  <div data-speed=".9" class="gallery__left">
+                    <a class="game gallery__item" href="https://github.com/Gurukprs">
+                    <div class="front">
+                      <img src="img/Github.png" alt="game">
+                      <h3 class="name">Guruprasaath S</h3>
+                      <div class="status">
+                        <p class="username">Guruprasaath</p>
+                       
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="streaming-info">
+                        <p class="game-stat">7 <span>Contributions</span></p>
+                        <p class="game-stat">3<span>Repositories</span></p>
+                      </div>
+                      <button class="btn">See profile</button>
+                   
+                      </div>
+                      <div class="backgroundWrapper"></div>
+                      </a>					
+                  </div>
+                  <div data-speed=".9" class="gallery__right">
+                    <a class="game gallery__item" href="https://www.instagram.com/guruprasaath_s">
+                    <div class="front">
+                      <img src="img/Instagram.png" alt="game">
+                      <h3 class="name">Guruprasaath S</h3>
+                      <div class="status">
+                        <p class="username">guruprasaath_s</p>
+                       
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="streaming-info">
+                        <p class="game-stat">429 <span>Followers</span></p>
+                        <p class="game-stat">531<span>Following</span></p>
+                      </div>
+                      <button class="btn">See profile</button>
+                   
+                      </div>
+                      <div class="backgroundWrapper"></div>
+                      </a>					
+                  </div>
+                  
+                </main>
+              </div>		
+            </div>	
+          </div>	
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // JavaScript to adjust the viewport scale based on width increase
+    function adjustViewportScale() {
+        const maxViewportWidth = 1200; // Set your max-width here
+        const currentViewportWidth = window.innerWidth;
+        const scaleFactor = currentViewportWidth / maxViewportWidth;
+        const newScale = 1 + scaleFactor;
+
+        // Update the viewport meta tag
+        document.querySelector('meta[name="viewport"]').setAttribute('content', `width=device-width, initial-scale=${newScale}`);
+    }
+
+    // Call the function on page load and window resize
+    window.addEventListener('load', adjustViewportScale);
+    window.addEventListener('resize', adjustViewportScale);
+</script>
+</html>
